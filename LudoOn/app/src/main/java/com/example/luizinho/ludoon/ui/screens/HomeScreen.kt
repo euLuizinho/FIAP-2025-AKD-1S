@@ -12,6 +12,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.luizinho.ludoon.data.repository.stories
+import com.example.luizinho.ludoon.ui.components.LudoOnBottomBar
 import com.example.luizinho.ludoon.ui.components.LudoOnTopBar
 import com.example.luizinho.ludoon.ui.components.StoryList
 
@@ -19,6 +20,7 @@ import com.example.luizinho.ludoon.ui.components.StoryList
 fun HomeScreen() {
     Scaffold(
         topBar = { LudoOnTopBar() },
+        bottomBar = { LudoOnBottomBar() },
         modifier = Modifier.background(MaterialTheme.colorScheme.background)
     ) { padding ->
         Box(
